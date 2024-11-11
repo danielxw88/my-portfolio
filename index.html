@@ -62,7 +62,22 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
+        <form id="contactForm" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <small class="errorMessage" id="nameError">Please input at least 2 characters.</small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <small class="errorMessage" id="emailError">Please input a valid email address.</small>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <small class="errorMessage" id="messageError">Please input at least 10 characters.</small>
+
+            <button type="submit">Submit</button>
+        </form>
+
     </section>
 
     <!-- Footer Section -->

@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0 0 60px 0;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
@@ -112,3 +112,14 @@ footer {
     margin-top: 15px;
     display: none;
 }
+
+.errorMessage {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+input:invalid, textarea:invalid {
+    border-color: red;
+}
+
