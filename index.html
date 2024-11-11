@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+<script src="script.js" defer></script>
+
 <body>
     <!-- Header Section -->
     <header>
-        <link rel="stylesheet" href="css/styles.css">
+
         <h1>Daniel Wang</h1>
         <nav>
             <ul>
@@ -22,13 +26,37 @@
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>A business analyst in medical industry, obtained a master degree in finance, seeking career oppotunities in financing industry.</p>
+        <p>A business analyst in medical industry, obtained a master degree in finance, seeking career oppotunities in
+            financing industry.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
-        <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
+        <div class="project-card">
+            <h3>project 1</h3>
+            <p>This is my first project.</p>
+            <button onclick="toggleDetails('project1')">Show Details</button>
+            <div id="project1" class="projectDetails" style="display: none;">
+                <p>Background; Objective; Step1; Step2; Step3; Conclusion</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>project 2</h3>
+            <p>This is my second project.</p>
+            <button onclick="toggleDetails('project2')">Show Details</button>
+            <div id="project2" class="projectDetails" style="display: none;">
+                <p>Background; Objective; Step1; Step2; Step3; Conclusion</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>project 3</h3>
+            <p>This is my third project.</p>
+            <button onclick="toggleDetails('project3')">Show Details</button>
+            <div id="project3" class="projectDetails" style="display: none;">
+                <p>Background; Objective; Step1; Step2; Step3; Conclusion</p>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -42,4 +70,5 @@
         <p>&copy; 2024 Daniel Wang</p>
     </footer>
 </body>
+
 </html>
