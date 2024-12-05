@@ -127,3 +127,54 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* dark mode */
+
+/* Dark mode toggle button styling */
+#toggleTheme {
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+    padding: 10px 15px;
+    background-color: #555;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#toggleTheme:hover {
+    background-color: #1a1c1f;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .project-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
