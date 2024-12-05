@@ -157,7 +157,6 @@ body.dark-mode {
 }
 
 
-
 body.dark-mode header {
     background-color: #1f1f1f;
 }
@@ -171,10 +170,23 @@ body.dark-mode .project-card {
     border: 1px solid #333;
 }
 
+
 body.dark-mode input,
 body.dark-mode textarea,
 body.dark-mode button {
     background-color: #333;
     color: #fff;
     border: 1px solid #555;
+}
+
+body.dark-mode #about {
+    background-color: #1f1f1f; 
+    color: #ffffff; 
+    padding: 1rem; 
+    border-radius: 8px; 
+}
+
+body.dark-mode #about h2 {
+    color: #ffffff; 
+
 }
