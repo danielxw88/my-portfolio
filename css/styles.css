@@ -123,3 +123,7 @@ input:invalid, textarea:invalid {
     border-color: red;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
